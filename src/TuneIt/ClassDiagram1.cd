@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TuneIt.Model.Note">
+    <Position X="6.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQKEEAACAAAABEAAAAABAAQAAQAAAAAAAAAAAAg=</HashCode>
+      <FileName>Model\Note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TuneIt.Notes">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgEAAGYBAABiAAAAIgAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Notes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TuneIt.Model.NoteSequence">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tune.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

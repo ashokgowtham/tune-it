@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="TuneIt.View.Controls.TuneView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:TuneIt="clr-namespace:TuneIt"
+             xmlns:Util="clr-namespace:TuneIt.Util" mc:Ignorable="d" d:DesignHeight="300"
+             d:DesignWidth="300">
+
+  <UserControl.Resources>
+    <Util:NoteWidthScaleConvertor x:Key="NoteWidthScaleConvertor" />
+        <Util:NoteToBackgroundColorConvertor x:Key="NoteToBackgroundBrushConvertor" />
+  </UserControl.Resources>
+  <Grid>
+        <ItemsControl ItemsSource="{Binding Sequence.Notes}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="{Binding Path=., Converter={StaticResource NoteToBackgroundBrushConvertor}}">
+                        <Grid.Style>
+                            <Style TargetType="Grid">
+                                <Setter Property="Width">
+                                    <Setter.Value>
+                                        <MultiBinding Converter="{StaticResource NoteWidthScaleConvertor}">
+                                            <Binding Path="Duration" />
+                                            <Binding Path="Scale" />
+                                        </MultiBinding>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Grid.Style>
+                        <TextBlock Foreground="White" Text="{Binding NoteIndex}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </Grid>
+</UserControl>
