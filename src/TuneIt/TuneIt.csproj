@@ -84,6 +84,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Engine\NoteRenderer.cs" />
+    <Compile Include="Model\Tone.cs" />
     <Compile Include="Model\Tune.cs" />
     <Compile Include="Util\Convertors.cs" />
     <Compile Include="Temp\TestWindow.xaml.cs">
@@ -122,9 +124,7 @@
     </Compile>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Engine\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
