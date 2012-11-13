@@ -84,7 +84,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Engine\CompiledTune.cs" />
+    <Compile Include="Engine\IEvaluate.cs" />
     <Compile Include="Engine\NoteRenderer.cs" />
+    <Compile Include="Engine\Script\CompileContext.cs" />
+    <Compile Include="Engine\Script\ScriptCompiler.cs" />
+    <Compile Include="Engine\TuneCompiler.cs" />
     <Compile Include="Model\Tone.cs" />
     <Compile Include="Model\Tune.cs" />
     <Compile Include="Util\Convertors.cs" />
