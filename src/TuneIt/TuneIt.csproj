@@ -129,7 +129,12 @@
     </Compile>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TuneItInterfaces\TuneItInterfaces.csproj">
+      <Project>{A55D451B-B310-407D-8AAF-DB99D832DE70}</Project>
+      <Name>TuneItInterfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
