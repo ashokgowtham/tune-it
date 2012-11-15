@@ -85,9 +85,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Engine\CompiledTune.cs" />
-    <Compile Include="Engine\IEvaluate.cs" />
     <Compile Include="Engine\NoteRenderer.cs" />
     <Compile Include="Engine\Script\CompileContext.cs" />
+    <Compile Include="Engine\Script\ExpressionCompiler.cs" />
     <Compile Include="Engine\Script\ScriptCompiler.cs" />
     <Compile Include="Engine\TuneCompiler.cs" />
     <Compile Include="Model\Tone.cs" />
@@ -130,6 +130,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TuneItDynamicBase\TuneItDynamicBase.csproj">
+      <Project>{3CAE984B-6EFD-47DA-894A-245BF8D23ED3}</Project>
+      <Name>TuneItDynamicBase</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TuneItInterfaces\TuneItInterfaces.csproj">
       <Project>{A55D451B-B310-407D-8AAF-DB99D832DE70}</Project>
       <Name>TuneItInterfaces</Name>

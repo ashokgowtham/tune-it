@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A55D451B-B310-407D-8AAF-DB99D832DE70}</ProjectGuid>
+    <ProjectGuid>{3CAE984B-6EFD-47DA-894A-245BF8D23ED3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TuneItInterfaces</RootNamespace>
-    <AssemblyName>TuneItInterfaces</AssemblyName>
+    <RootNamespace>TuneItDynamicBase</RootNamespace>
+    <AssemblyName>TuneItDynamicBase</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,7 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IEvaluate.cs" />
+    <Compile Include="DynamicCompiledScriptBase.cs" />
+    <Compile Include="IDynamicScript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

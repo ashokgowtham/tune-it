@@ -1,6 +1,6 @@
 ﻿using System;
 
-using TuneIt.Engine;
+using TuneItInterfaces;
 
 namespace TuneIt.Model
 {

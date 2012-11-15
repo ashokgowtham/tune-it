@@ -1,5 +1,7 @@
 ﻿using System;
 
+using TuneItInterfaces;
+
 namespace TuneIt.Engine
 {
     /// <summary>
@@ -16,7 +18,7 @@ namespace TuneIt.Engine
             this.evaluator = evaluator;
         }
 
-        #region IEvaluate<double> Members
+        #region IEvaluate Members
 
         public Func<double, double> Evaluator { get { return evaluator; } }
 

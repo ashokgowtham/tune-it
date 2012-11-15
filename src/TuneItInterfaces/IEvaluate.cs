@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TuneIt.Engine
+namespace TuneItInterfaces
 {
     public interface IEvaluate
     {
